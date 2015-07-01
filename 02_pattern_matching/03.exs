@@ -8,13 +8,13 @@
 #=> Will not match.
 
 a = 1
-#=> Could possibly match with the previous variable
+#=> Match.
 
 ^a = 2
-#=> Match!
+#=> Will not match.
 
 ^a = 1
-#=> No match!
+#=> Match.
 
 ^a = 2 - a
-#=> No match!
+#=> Will match!
